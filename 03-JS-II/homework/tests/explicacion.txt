@@ -1,0 +1,9 @@
+Definiciones:
+
+Bucle For:
+
+&&: Estos dos signos juntos significan "Y" y lo colocas para 
+
+||: Estos dos signos juntos significan "OR" o en español 
+
+!: Este signo significa negación, si lo ves está diciendo NO
