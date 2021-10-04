@@ -33,8 +33,8 @@ function conection(status) {
     if (status === 1) {
       return ("Online")
     }
-      else if (status === 2) {
-        return ("Away")
+    if (status === 2) {
+      return ("Away")
     }
         return ("Offline");
 }
@@ -90,12 +90,8 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-    if (numero === 10 || numero === 5) {
-      return true
-    }
-      else {
-        return false
-      }
+    return numero === 10 || numero === 5
+     
 
 }
 
@@ -103,12 +99,7 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero < 50 && numero > 20) {
-    return true;
-  }
-    else {
-      return false;
-    }
+  return numero < 50 && numero > 20
 }
 
 function esEntero(numero) {
@@ -143,17 +134,16 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
 
-    if (numero % 3 === 0 && numero % 5 === 0) {
+    if (numero % 3 === 0 && numero % 5 === 0) 
       return "fizzbuzz"
-    }
+
   
-    if (numero % 3 === 0) {
+    if (numero % 3 === 0) 
       return "fizz"
-    } 
     
-    if (numero % 5 === 0) {
+    if (numero % 5 === 0)
       return "buzz"
-    }
+
     return (numero)
   }
 
@@ -217,37 +207,42 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
+  let arrayTablaDel6 = []
+  for (let i = 0; i < 11; i++) {
+        arrayTablaDel6.push(6 * i)
+  }
+  return arrayTablaDel6
+}
 
       
-
- 
-}
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
     
-    Math.round(numero);
-    
-    if (numero.length === 3) {
-        return true;
-    }
-        return false;
-    }
+  if(numero > 99 && numero < 1000){
+    return true
+  }
+  return false
+}
   
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-    for (var i = 0; i <= numero; i++) {
-      console.log(i);
-      if (i > 9) {
-        return
-      }
-    }
 
+  var a = numero;
+  var i = 0;
+  do {
+    i = i + 1;
+    a = a + 5;
+  }
+  while(i < 8);
+  return a;
 }
+
+
 
 
 // No modificar nada debajo de esta línea
