@@ -203,7 +203,7 @@ function esVerdadero(valor) {
   
 }
 
-function tablaDelSeis(){
+function tablaDelSeis() {
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
@@ -238,8 +238,8 @@ function doWhile(numero) {
     i = i + 1;
     a = a + 5;
   }
-  while(i < 8);
-  return a;,l-
+  while (i < 8);
+  return a;
 }
 
 

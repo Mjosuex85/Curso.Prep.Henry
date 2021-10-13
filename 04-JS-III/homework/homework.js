@@ -27,7 +27,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-
+      var nuevoArray = [];
+      for (i = 0; i < array.length; i++){
+        nuevoArray[i] = array[i] + 1;
+      }
+        return nuevoArray;
+      
 
 }
 
@@ -37,7 +42,9 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // y devuelve el array
   // Tu código:
 
-    array
+  array[array.length] = elemento;
+  return array;
+    
 }
 
 
@@ -61,6 +68,8 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
       
+    return palabras.join(" ")
+      
 }
 
 
@@ -82,6 +91,8 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+
+  
 }
 
 
@@ -112,27 +123,25 @@ function diaDeLaSemana(numeroDeDia) {
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
 
-  if (numeroDeDia === 1) {
+  if (numeroDeDia === 1 || numeroDeDia === 7) {
+    
     return "Es fin de semana"
   }
-  
-  if (numeroDeDia === 7) {
-    return "Es fin de semana"
-  }
-  if (numeroDeDia === 2 || numeroDeDia === 3 || numeroDeDia === 4 || numeroDeDia === 5 || numeroDeDia === 6) {
-    return "Es dia Laboral"
-  }
-
-
-  
+  return "Es dia Laboral"
 } 
 
 
 function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
-  //Escribe tu código aquí  
-  
+  //Escribe tu código aquí 
+    let num = n.toString()
+    
+    if (num.charAt(0) === "9") {
+
+      return true;
+    }
+    return false;
 }
 
 
@@ -149,7 +158,8 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-}
+   var meses = ["Enero", "Marzo", "Noviembre"]
+}  
 
 
 function mayorACien(array) {
