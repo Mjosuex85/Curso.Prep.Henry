@@ -90,8 +90,10 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-    return numero === 10 || numero === 5
-     
+    if  ( numero === 10 || numero === 5) {
+      return true
+    }
+      return false
 
 }
 
@@ -180,10 +182,13 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
 
-  if ( numero < 2) return false;
-  if (numero === 2) return true;
-   for(var i = 2; i < numero; i++){
-    if(numero % i === 0) {
+    if ( numero < 2) return false;
+  
+    if (numero === 2) return true;
+   
+    for(var i = 2; i < numero; i++) {
+    
+      if(numero % i === 0) {
       return false;
      }
     }
@@ -207,13 +212,18 @@ function tablaDelSeis() {
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  let arrayTablaDel6 = []
-  for (let i = 0; i < 11; i++) {
-        arrayTablaDel6.push(6 * i)
-  }
-  return arrayTablaDel6
-}
+  
+  let multiplicar = 6
+  let hastaEl10 = 10
+  let resultado = []
 
+  for (let i = 0; i <= hastaEl10; i++ ) {
+     resultado.push(i * multiplicar)
+ }
+
+return resultado
+
+}
       
 
 function tieneTresDigitos(numero){

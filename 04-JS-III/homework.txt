@@ -1,0 +1,12 @@
+// Explicación que es un Array:
+
+Un ARRAY es una caja y la caja se escribe asi [] esta caja le podemos poner un nombre y luego meterle varias datos, (Numeros, letras, strings, booleanos, funciones, etc)
+
+vamos a poner un ejemplo, la caja se llamará COLORES y pondremos colores en ella.
+
+Dentro de la caja [] hay posiciones donde podemos poner los colores, las posiciones son (0, 1, 2, 4, 5) y pueden ser hasta donde queramos
+
+por ejemplo, en la caja  --  colores = [] podemos colocar los colores que queramos,   ["Azul", "Verde", "blanco"] 
+AZUL está en la posiciógitn 0, Verde en la posición 1, y Blanco en la posición 2.
+
+si queremos buscar uno de los 3 colores de nuestra caja,   escribimos el nombre de la caja y la posición del color.. colores[0] o tambien colores[1] depende del color que querramos

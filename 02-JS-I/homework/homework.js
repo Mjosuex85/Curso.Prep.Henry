@@ -1,10 +1,10 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = 'Mario';
+const nuevaString = "Mario";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum =5;
+const nuevoNum = 5;
 
 // Crea una variable booleana:
 const nuevoBool = true;
@@ -198,7 +198,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-        return (nombre + " " + apellido);
+        return nombre + " " + apellido;
   
 }
 
@@ -239,6 +239,7 @@ function deEuroAdolar(euro){
     const dol = 1
     const ar = 0.20
     var dolar = (dol + ar)
+    
     return euro * dolar;
   
 }
@@ -255,11 +256,10 @@ function esVocal(letra){
     if (letra.length > 1){
       return "Dato incorrecto"
   } 
-  if (letra === "a"|| letra === "e"|| letra === "i"|| letra === 
-  "o"|| letra === "u"){
+    if (letra === "a"|| letra === "e"|| letra === "i"|| letra === "o"|| letra === "u") {
     return "Es vocal"
   }
-  return "Dato incorrecto"
+    return "Dato incorrecto"
   }
 
 
