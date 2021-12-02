@@ -54,7 +54,7 @@ function saludo(idioma) {
       return "Ni Hao!"
     }
     else if (idioma === "ingles") {
-      return "Hello!"
+      return "Hello!" 
     }
       return "Hola!"
 }
@@ -213,12 +213,11 @@ function tablaDelSeis() {
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   
-  let multiplicar = 6
-  let hastaEl10 = 10
+
   let resultado = []
 
-  for (let i = 0; i <= hastaEl10; i++ ) {
-     resultado.push(i * multiplicar)
+  for (let i = 0; i <= 10; i++ ) {
+     resultado.push(i * 6)
  }
 
 return resultado
@@ -245,8 +244,8 @@ function doWhile(numero) {
   var a = numero;
   var i = 0;
   do {
-    i = i + 1;
-    a = a + 5;
+    i += 1
+    a += 5;
   }
   while (i < 8);
   return a;

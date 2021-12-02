@@ -51,9 +51,10 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
 
-  var result = objetoMisterioso.numeroMisterioso * 5;
+  
+     let resultado = objetoMisterioso["numeroMisterioso"] * 5;
 
-  return result;
+     return resultado
 
 }
 
@@ -73,13 +74,13 @@ function nuevoUsuario(nombre, email, password) {
   // Devuelve el objeto
   // Tu código:
 
-        let objNuevo = {
+        let obj = {
           nombre: nombre,
           email: email,
-          password: password,
+          password: password
         }
-        
-        return objNuevo;
+          return obj;
+
 }
 
 function tieneEmail(usuario) {
@@ -152,6 +153,10 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  // usuarios = [usuario = { esPremium: true}]
+  //    
+  //
+  // 
 
     for (let i = 0; i < usuarios.length; i++) {
           usuarios[i].esPremium = true;
@@ -168,7 +173,7 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-  
+
   var suma = 0;
 
   for(var i = 0; i < usuario.posts.length; i++) {
@@ -191,10 +196,11 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:.
 
-        producto["calcularPrecioDescuento"] = function() {producto.precio * "porcentajeDeDescuento"}
 
-        
-        return producto
+        producto.calcularPrecioDescuento = function() {
+          return this.precio - ( producto.precio * this.porcentajeDeDescuento);
+        };
+        return producto;
 
       
 }
