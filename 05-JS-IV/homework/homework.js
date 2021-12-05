@@ -50,11 +50,10 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
+       
+        var mult = objetoMisterioso["numeroMisterioso"] * 5;
 
-  
-     let resultado = objetoMisterioso["numeroMisterioso"] * 5;
-
-     return resultado
+        return mult
 
 }
 
@@ -75,9 +74,9 @@ function nuevoUsuario(nombre, email, password) {
   // Tu código:
 
         let obj = {
-          nombre: nombre,
-          email: email,
-          password: password
+          nombre,
+          email,
+          password
         }
           return obj;
 
@@ -140,7 +139,7 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Devuelve el objeto "usuario"
   // // Tu código:  
 
-        usuario.amigos.push(nuevoAmigo);
+        usuario["amigos"].push(nuevoAmigo)
         return usuario;
 
 
@@ -153,7 +152,8 @@ function pasarUsuarioAPremium(usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
-  // usuarios = [usuario = { esPremium: true}]
+  // usuarios = [  usuario = { esPremium: true},
+  //             usuario = { esPremium: true} ]
   //    
   //
   // 
@@ -196,15 +196,14 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:.
 
-
-        producto.calcularPrecioDescuento = function() {
-          return this.precio - ( producto.precio * this.porcentajeDeDescuento);
-        };
-        return producto;
+            producto.calcularPrecioDescuento = function() {
+            return this.precio - (this.precio * this.porcentajeDeDescuento);
+  };
+            return producto;
+        
 
       
 }
-
 // No modificar nada debajo de esta línea
 // --------------------------------
 
