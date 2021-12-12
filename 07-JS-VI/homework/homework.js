@@ -72,7 +72,7 @@ function filter(array) {
     let nuevoarray1 = []
     
     array.filter(function(x){
-      if (x[0] === "a") {
+      if (x.charAt(0) === "a") {
 
         nuevoarray1.push(x)
 
