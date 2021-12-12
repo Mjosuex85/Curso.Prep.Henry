@@ -28,10 +28,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-      var aumento = []
-      for (let i = 0; i < array.length; i++) {
-        aumento.push(array[i] + 1);
-      }
+     
+  
+      var aumento = array.map(function(x) {
+         return x + 1
+      })
         return aumento;
     }
 
@@ -78,30 +79,24 @@ function arrayContiene(array, elemento) {
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
 
-    for (let i = 0; i < array.length; i++) {
-      if (elemento === array[i]) {
-        return true
-      }
-    }
-    return false
+     for (let i = 0; i < array.length; i++) {
+       
+          if (elemento === array[i]) {
+                return true;
+               }
+       }
+     return false;
 }
-
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-        
-        let suma = null;
-        
-        for (let i = 0; i < numeros.length; i++) {
-          
-          suma = numeros[i] + suma;
 
-        }
-
+      var suma = numeros.reduce(function(a, b) {
+            return a + b;
+      })
       return suma;
-          
 }
 
 
@@ -112,15 +107,15 @@ function promedioResultadosTest(resultadosTest) {
 
     // return agregarNumeros(resultadosTest) / resultadosTest.length
 
-      var promedio = 0;
-      var final = resultadosTest.length
-      for (var i = 0; i < final; i++) {
-          promedio = resultadosTest[i] + promedio;
+        let total = resultadosTest.length;
+    
+        resultado = resultadosTest.reduce(function(a, b){
+        return a + b
+      })
 
-      }
-        return promedio / final
-
+          return resultado / total;
 }
+
 
 
 function numeroMasGrande(numeros) {
